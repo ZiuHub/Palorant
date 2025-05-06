@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palorant - Report</title>
+  <link rel="icon" href="Assets/Logo_Icon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-container">
+        <div class="logo">
+            <img src="Assets/Logo.png" alt="Logo">
+        </div>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <nav class="nav-menu" id="nav-menu">
+            <a href="map.html">Maps</a>
+            <a href="agent.html">Agents</a>
+            <a href="home.html">Home</a>
+            <a href="news.html">News</a>
+            <a href="report.html" class="active">Report</a>
+        </nav>
+    </div>
+  </header>
+
+  <main class="report-section">
+    <img src="Assets/Warning.png" alt="Warning Icon" class="report-image">
+    <h1 class="report-title">REPORT</h1>
+    <p class="report-subtext">
+      Encountering bugs while battling?<br>
+      Let us know so we can fix them and improve your experience.
+    </p>
+
+    <form class="report-form" onsubmit="return validateForm(event)" novalidate>
+      <label for="username">Your Name</label>
+      <input type="text" id="username" placeholder="Enter your name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="server">Your Server</label>
+      <select id="server" required>
+        <option value="" disabled selected>Select your server</option>
+        <option value="africa">Africa</option>
+        <option value="asia">Asia</option>
+        <option value="canada">Canada</option>
+        <option value="europe">Europe</option>
+        <option value="north-america">North America</option>
+        <option value="oceania">Oceania</option>
+        <option value="south-america">South America</option>
+      </select>
+
+      <label for="details">Bug Details</label>
+      <textarea id="details" rows="4" placeholder="Describe the bug in detail..." required></textarea>
+
+      <label class="checkbox-label">
+        <input type="checkbox" id="consent"> I allow receiving follow-up emails regarding this report
+      </label>
+
+      <button type="submit" class="submit-btn">Submit Report</button>
+      <div id="notification" class="notification"></div>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <img src="Assets/Logo_Mini.png" alt="Logo" class="footer-logo">
+      <p>&copy; 2020-2025 Giot Games, Inc.<br>Giot Games, Palorant and associated logos are trademarks of Giot Games, Inc.</p>
+      <ul>
+          <li><a href="#">TERMS OF POLICY</a></li>
+          <li><a href="#">PRIVACY POLICY</a></li>
+          <li><a href="#">CONTACT US</a></li>
+      </ul>
+      <p class="footer-designed">Designed by ZIU</p>
+    </div>
+  </footer>
+</body>
+</html>

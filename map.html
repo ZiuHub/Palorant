@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palorant - Maps</title>
+  <link rel="icon" href="Assets/Logo_Icon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-container">
+        <div class="logo">
+            <img src="Assets/Logo.png" alt="Logo">
+        </div>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <nav class="nav-menu" id="nav-menu">
+            <a href="map.html" class="active">Maps</a>
+            <a href="agent.html">Agents</a>
+            <a href="home.html">Home</a>
+            <a href="news.html">News</a>
+            <a href="report.html">Report</a>
+        </nav>
+    </div>
+</header>
+
+  <section class="hero fade" style="background-image: url('Assets/Agent_Lotus.webp'); background-size: cover; background-position: center;">
+    <div class="hero-content">
+      <h1>MAPS</h1>
+      <p>Got your agent locked?<br>Now, choose your battleground and deploy your strategy to dominate the fight!</p>
+    </div>
+  </section>  
+
+  <section class="map-section">
+    <div class="map-gallery">
+      <div class="map-box lotus" data-map="lotus">
+        <img src="Assets/LOTUS Map.jpg" alt="Loxus Map">
+        <div class="map-name">Loxus</div>
+      </div>
+      <div class="map-box sunset" data-map="sunset">
+        <img src="Assets/SUNSET Map.jpg" alt="Gunset Map">
+        <div class="map-name">Gunset</div>
+      </div>
+      <div class="map-box bind" data-map="bind">
+        <img src="Assets/BIND Map.jpg" alt="Blind Map">
+        <div class="map-name">Blind</div>
+      </div>
+      <div class="map-box abyss" data-map="abyss">
+        <img src="Assets/ABYSS Map.jpg" alt="Alyss Map">
+        <div class="map-name">Alyss</div>
+      </div>
+      <div class="map-box glitch" data-map="glitch">
+        <img src="Assets/GLITCH Map.png" alt="Flinch Map">
+        <div class="map-name">Flinch</div>
+      </div>
+    </div>
+
+    <div class="map-description">
+        <span class="close-desc" style="font-size: 80px;">&times;</span>
+        <h2>Select a Map</h2>
+        <p>Each map offers unique terrain and challenges. Choose your battleground to strategize and outmaneuver your opponents.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <img src="Assets/Logo_Mini.png" alt="Logo" class="footer-logo">
+      <p>&copy; 2020-2025 Giot Games, Inc.<br>Giot Games, Palorant and associated logos are trademarks of Giot Games, Inc.</p>
+      <ul>
+        <li><a href="#">TERMS OF POLICY</a></li>
+        <li><a href="#">PRIVACY POLICY</a></li>
+        <li><a href="#">CONTACT US</a></li>
+      </ul>
+      <p class="footer-designed">Designed by ZIU</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

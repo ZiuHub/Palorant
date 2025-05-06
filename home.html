@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palorant - Home</title>
+  <link rel="icon" href="Assets/Logo_Icon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-container">
+        <div class="logo">
+            <img src="Assets/Logo.png" alt="Logo">
+        </div>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <nav class="nav-menu" id="nav-menu">
+            <a href="map.html">Maps</a>
+            <a href="agent.html">Agents</a>
+            <a href="home.html" class="active">Home</a>
+            <a href="news.html">News</a>
+            <a href="report.html">Report</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero fade">
+  <div class="video-container">
+    <video autoplay muted loop playsinline class="bg-video">
+      <source src="Assets/BGHome.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="hero-content">
+    <h1>PALORANT</h1>
+    <p>Palorant is a tactical FPS game where teams of 5 battle to win 13 rounds using unique agent abilities in a near-future world.</p>
+    <a href="agent.html" class="play-btn">Play Now</a>
+  </div>
+</section>
+
+  <section class="highlight-section">
+    <div class="highlight-box">
+      <img src="Assets/OmenHome.jpg" alt="Oden" class="section-img">
+      <div class="text-box">
+        <h2>Top Agent: Oden (Controller)</h2>
+        <p>Oden uses darkness and teleportation to confuse enemies and control the battlefield.</p>
+        <a href="agent.html" class="btn-link">See Agents</a>
+      </div>
+    </div>
+
+    <div class="highlight-box">
+      <img src="Assets/LOTUS Map.jpg" alt="Loxus" class="section-img">
+      <div class="text-box">
+        <h2>Top Map: Loxus</h2>
+        <p>Loxus is a mysterious structure with ancient power. Its great stone doors unlock paths to three mystical sites.</p>
+        <a href="map.html" class="btn-link">See Maps</a>
+      </div>
+    </div>
+
+    <div class="highlight-box">
+      <img src="Assets/Palorant Championship.webp" alt="News" class="section-img">
+      <div class="text-box">
+        <h2>Hot News</h2>
+        <p>Palorant Championship 2025: Your Team in the Global Arena!</p>
+        <a href="news.html" class="btn-link">See News</a>
+      </div>
+    </div>
+  </section>  
+
+  <footer class="footer">
+    <div class="footer-content">
+      <img src="Assets/Logo_Mini.png" alt="Logo" class="footer-logo">
+      <p>&copy; 2020-2025 Giot Games, Inc.<br>Giot Games, Palorant and associated logos are trademarks of Giot Games, Inc.</p>
+      <ul>
+        <li><a href="#">TERMS OF POLICY</a></li>
+        <li><a href="#">PRIVACY POLICY</a></li>
+        <li><a href="#">CONTACT US</a></li>
+      </ul>
+      <p class="footer-designed">Designed by ZIU</p>
+    </div>
+  </footer>
+</body>
+</html>

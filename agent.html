@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palorant - Agents</title>
+  <link rel="icon" href="Assets/Logo_Icon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-container">
+        <div class="logo">
+            <img src="Assets/Logo.png" alt="Logo">
+        </div>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <nav class="nav-menu" id="nav-menu">
+            <a href="map.html">Maps</a>
+            <a href="agent.html" class="active">Agents</a>
+            <a href="home.html">Home</a>
+            <a href="news.html">News</a>
+            <a href="report.html">Report</a>
+        </nav>
+    </div>
+  </header>
+
+  <section class="hero fade" style="background-image: url('Assets/BGAgents.jpg'); background-size: cover; background-position: center;">
+    <div class="hero-content">
+      <h1>AGENTS</h1>
+      <p>Choose your agent, unlock unique abilities, and lead your team to victory!</p>
+    </div>
+  </section>  
+
+  <section class="agent-gallery">
+    <div class="agent-card omen-card" data-agent="Omen">
+      <img src="Assets/Omen.png" alt="Oden">
+      <div class="agent-name">Oden</div>
+    </div>
+    <div class="agent-card jett-card" data-agent="Jett">
+      <img src="Assets/Jett.png" alt="Jexx">
+      <div class="agent-name">Jexx</div>
+    </div>
+    <div class="agent-card skye-card" data-agent="Skye">
+      <img src="Assets/Skye.png" alt="Skyle">
+      <div class="agent-name">Skyle</div>
+    </div>
+    <div class="agent-card cypher-card" data-agent="Cypher">
+      <img src="Assets/Cypher.png" alt="Chyper">
+      <div class="agent-name">Chyper</div>
+    </div>
+    <div class="agent-card brimstone-card" data-agent="Brimstone">
+      <img src="Assets/Brimstone.png" alt="Brewstone">
+      <div class="agent-name">Brewstone</div>
+    </div>
+    <div class="agent-description-box agent-default">
+      <span class="close-desc">&times;</span>
+      <h2>Select an Agent</h2>
+      <p>Pick an agent, master their unique abilities, and prepare to lead your team to victory in the heat of battle.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <img src="Assets/Logo_Mini.png" alt="Logo" class="footer-logo">
+      <p>&copy; 2020-2025 Giot Games, Inc.<br>Giot Games, Palorant and associated logos are trademarks of Giot Games, Inc.</p>
+      <ul>
+        <li><a href="#">TERMS OF POLICY</a></li>
+        <li><a href="#">PRIVACY POLICY</a></li>
+        <li><a href="#">CONTACT US</a></li>
+      </ul>
+      <p class="footer-designed">Designed by ZIU</p>
+    </div>
+  </footer>
+</body>
+</html>
